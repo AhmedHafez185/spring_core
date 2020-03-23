@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+    <context:property-placeholder location="classpath:application.properties" />
+   <context:component-scan base-package="com.ahmed.app"/>
+<!--    <bean id="cloudUploader" class="com.ahmed.app.file.impl.CloudFileUploader"> 
+        <constructor-arg name="imageProcessor" ref="imageProcessor"/>
+      <property name="imageProcessor" ref="imageProcessor" />
+        <property name="cloudProvider" value="{cloud.provider}"/>
+    </bean>
+    <bean id="imageProcessor" class="com.ahmed.app.file.impl.SimpleImageProcessor" /> 
+    -->
+</beans>
